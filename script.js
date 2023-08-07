@@ -1,4 +1,7 @@
 let books = [];
+let formSetHidden = document.getElementById("form").style.visibility = "hidden";
+
+
 
 //Constructor
 function Book(title, author, pages, read) {
