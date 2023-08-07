@@ -1,4 +1,88 @@
+:root {
+    --primary-color: #f8fafc;
+    --secondary-color: #cbd5e1;
+    --accent-color: #64748b;
+}
+
 body {
     height: 100vh;
     width: 100vw;
 }
+
+.main-container {
+    display: grid;
+    grid-template-rows: 1fr 10fr 0.5fr;
+    height: 100vh;
+    
+}
+/* header */
+.header {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 20px;
+}
+
+/* content */
+.content {
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+}
+
+
+.button-container {
+    grid-row: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* button styling */
+.button-container>button {
+    border-radius: 9999px;
+    background-color: var(--accent-color);
+    width: 250px;
+    height: 75px;
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: larger;
+}
+
+.form-container {
+    grid-row: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.form-container>form {
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    padding: 20px;
+    border-radius: 30px;
+    background-color: var(--secondary-color);
+    visibility: hidden;
+}
+
+form>input {
+    margin-bottom: 10px;
+}
+
+/* checkbox style */
+form>.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 10px;
+}
+
+/* footer */
+.footer {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+}
+
