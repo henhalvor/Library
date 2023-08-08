@@ -52,7 +52,7 @@ body {
 
 .form-container {
     grid-row: 2;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     
@@ -65,20 +65,20 @@ body {
     padding: 20px;
     border-radius: 30px;
     background-color: var(--secondary-color);
-    visibility: hidden;
 }
 
 form>input {
     margin-bottom: 10px;
 }
 
-/*
+
 .book-container {
+    display: block;
     grid-row: 2;
     width: 100%;
     background-color: aqua;
 }
-*/
+
 
 /* checkbox style */
 form>.checkbox {

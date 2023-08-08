@@ -1,5 +1,5 @@
 let books = [];
-let formSetHidden = document.getElementById("form").style.visibility = "hidden";
+let formSetHidden = document.querySelector(".form-container").style.display = "none";
 
 
 
@@ -71,11 +71,15 @@ function renderBooks() {
   
 
 function showForm() {
-    let form = document.getElementById("form");
-    if(form.style.visibility === "hidden") {
-        form.style.visibility = "visible";
+    let formContainer = document.querySelector(".form-container");
+    let bookContainer = document.querySelector(".book-container")
+    
+    if(formContainer.style.display === "none") {
+        formContainer.style.display = "flex";
+        bookContainer.style.display = "none"
     } else {
-        form.style.visibility = "hidden";
+        formContainer.style.display = "none";
+        bookContainer.style.display = "block"
     }
     
 }
