@@ -72,6 +72,14 @@ form>input {
     margin-bottom: 10px;
 }
 
+/*
+.book-container {
+    grid-row: 2;
+    width: 100%;
+    background-color: aqua;
+}
+*/
+
 /* checkbox style */
 form>.checkbox {
     display: flex;
