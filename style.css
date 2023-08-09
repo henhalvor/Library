@@ -73,10 +73,11 @@ form>input {
 
 
 .book-container {
-    display: block;
+    display: flex;
     grid-row: 2;
     width: 100%;
     background-color: aqua;
+    flex-wrap: wrap;
 }
 
 
