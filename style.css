@@ -1,7 +1,7 @@
 :root {
     --primary-color: #f8fafc;
-    --secondary-color: #cbd5e1;
-    --accent-color: #64748b;
+    --secondary-color: #eaedf1;
+    --accent-color: #768191;
 }
 
 body {
@@ -62,7 +62,7 @@ body {
     display: flex;
     flex-direction: column;
     border-style: solid;
-    padding: 20px;
+    padding: 2rem;
     border-radius: 30px;
     background-color: var(--secondary-color);
 }
@@ -71,13 +71,36 @@ form>input {
     margin-bottom: 10px;
 }
 
+form>button {
+    border-radius: 9999px;
+    color: var(--primary-color);
+    background-color: var(--accent-color);
+    font-weight: 700;
+    height: 2rem;
+}
+
 
 .book-container {
     display: flex;
     grid-row: 2;
     width: 100%;
-    background-color: aqua;
     flex-wrap: wrap;
+}
+
+.book {
+    margin: 1rem;
+    border-style: solid;
+    height: fit-content;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: var(--secondary-color);
+}
+
+.book>.card-body>button {
+    border-radius: 999px;
+    padding: 0.2rem 0.5rem;
+    background-color: var(--accent-color);
+    color: var(--primary-color);
 }
 
 
@@ -93,5 +116,6 @@ form>.checkbox {
 .footer {
     background-color: var(--accent-color);
     color: var(--primary-color);
+    padding-left: 1rem;
 }
 
